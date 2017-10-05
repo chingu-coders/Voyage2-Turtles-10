@@ -1,6 +1,6 @@
-######(read me format "borrowed" from Voyage2-Bears-02 thanks ;) ) Chingu > Turtles > Team 10
+###### (read me format "borrowed" from Voyage2-Bears-02 thanks ;) ) Chingu > Turtles > Team 10
 
-####Build to learn
+#### Build to learn
 
 **Who is this application for?**
 Slack users...specifically Chingu slack groups!

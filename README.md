@@ -31,3 +31,4 @@ A front end with editable user profiles and keyword tags comprised from data fro
 **TEAM**  
 
 * Cameron Nicklaus
+* Austin Berbereia

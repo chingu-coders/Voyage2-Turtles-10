@@ -32,3 +32,4 @@ A front end with editable user profiles and keyword tags comprised from data fro
 
 * Cameron Nicklaus
 * Austin Berbereia
+* Monyett Tanzillo

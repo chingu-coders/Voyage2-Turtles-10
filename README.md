@@ -12,8 +12,8 @@ Potentially 3:
 3: Archive user data.
 
 **How will this application solve this problem?**  
-1: It will scrape and coalesce specifically the data from the "add-your-intro-here" channel and make it more searchable.
-2: It will use basic AI to create tags from highly used keywords within the data and associate those with each user.
+1: It will scrape and coalesce specifically the data from the "add-your-intro-here" channel and make it more searchable.  
+2: It will use basic AI to create tags from highly used keywords within the data and associate those with each user.  
 3: It will persist data to a data store.
 
 **What is the minimum viable product?**  

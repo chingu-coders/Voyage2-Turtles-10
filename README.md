@@ -6,7 +6,7 @@
 Slack users...specifically Chingu slack groups!
 
 **What problem will this application attempt to solve?**  
-Potentially 3:
+Potentially 3:  
 1: Make finding info on our fellow chingu's more accessable.  
 2: Build a stronger community by highlighting shared interests.  
 3: Archive user data.

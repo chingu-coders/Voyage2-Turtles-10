@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 //import components here:
 import Sidebar from './containers/sidebar';
 import SingleProfile from './components/single_profile_view';
-import SignInForm from './containers/sign-in-form.js';
+
 
 class App extends Component {
   render() {

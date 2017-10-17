@@ -22,3 +22,6 @@ yarn-error.log*
 
 stateful-component-exp.js
 example-index.js
+example_reducer_index.js
+example_reducer_posts.js
+example_actions_index.js

@@ -3,6 +3,7 @@ import { Form, FormGroup, FormControl, Button, Checkbox, Col, ControlLabel } fro
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setLoginStatus } from '../actions/index';
+import Login  from './google_login';
 
 class LoginView extends Component {
   constructor(props) {
@@ -44,13 +45,13 @@ class LoginView extends Component {
     if (this.state.rememberMe === false) {
       this.resetForm();
     }
-    
-    
-    console.log('onSubmit called. this.state.emal: ', this.state.email, ' this.state.password: ', this.state.password)
+    // console.log('onSubmit called. this.state.emal: ', this.state.email, ' this.state.password: ', this.state.password)
   }
   
   render() {
     return (
+      <div>
+        <Login />
         
         <Form horizontal onSubmit={this.onSubmit}>
         <FormGroup controlId="formHorizontalEmail">
@@ -84,6 +85,7 @@ class LoginView extends Component {
         </Col>
       </FormGroup>
       </Form>
+      </div>
     );
   }
 }

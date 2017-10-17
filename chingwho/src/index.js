@@ -29,3 +29,8 @@ ReactDOM.render(
   , document.getElementById('root'));
 
 registerServiceWorker();
+
+
+// client ID: 58458042356-q5m7fdu5n6galhbssgnah3agipefslac.apps.googleusercontent.com
+
+// client secret: Qymfq5JJme0OIoKkGxV3DnJW

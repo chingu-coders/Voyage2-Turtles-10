@@ -4,10 +4,10 @@
 /node_modules
 
 # testing
-/coverage
+coverage
 
 # production
-/build
+build
 
 # misc
 .DS_Store
@@ -20,8 +20,19 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-stateful-component-exp.js
+
+# source
+example_actions_index.js
 example-index.js
+
+# containers
+example_weather_list.js
+stateful-component-exp.js
+old_login_view.js
+
 example_reducer_index.js
 example_reducer_posts.js
-example_actions_index.js
+
+
+
+

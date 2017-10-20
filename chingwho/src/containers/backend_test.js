@@ -1,7 +1,9 @@
+//this component is for testing our backend server
+
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { fetchServerTest } from '../actions/index';
+import { serverTest } from '../actions/index';
 import axios from 'axios';
 
 class BackendTest extends Component {
@@ -28,6 +30,6 @@ class BackendTest extends Component {
 };
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({ fetchServerTest }, dispatch);
+  return bindActionCreators({ serverTest }, dispatch);
 }
 export default connect(null, mapDispatchToProps)(BackendTest);

@@ -10,6 +10,7 @@ import {
   withRouter
 } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
+import './index.css';
 
 
 

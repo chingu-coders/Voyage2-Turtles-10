@@ -20,12 +20,13 @@ import UserProfiles from './components/profiles_view';
 import LoginView from './containers/login_view';
 import BackendTest from './containers/backend_test';
 
-const AppPreview = () => (
+const AppPreview = ({ match }) => (
   <div>
     <Navigation />
     <Sidebar />
     <SingleProfile />
     <UserProfiles />
+    <div>ID = {match.params.id}</div>
   </div>
 );
 
@@ -37,7 +38,7 @@ ReactDOM.render(
     <Router>
       <div>
         <Link to="/preview">app preview</Link>
-        <Route path="/:id" component={AppPreview} />
+        {/* <Route path="/:id" component={AppPreview} /> */}
         <Route path="/" component={LoginView} />
         {/* <Route path="/" component={BackendTest} /> */}
       </div>

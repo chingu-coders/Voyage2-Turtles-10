@@ -11,7 +11,7 @@ export default function Login() {
   }
 
   return (
-    <div onClick={login}>login</div>
+    <div onClick={login}>Old login</div>
   );
   
 }

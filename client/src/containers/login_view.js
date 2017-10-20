@@ -11,7 +11,10 @@ export default class LoginView extends Component {
 
   render() {
     return (
+      <div>
       <Login />
+      <a href="auth/google">new login</a>
+      </div>
     );
   }
 }

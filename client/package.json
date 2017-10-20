@@ -20,5 +20,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": {
+    "/auth/google": {
+      "target": "http://localhost:3001"
+    }
+  }
 }

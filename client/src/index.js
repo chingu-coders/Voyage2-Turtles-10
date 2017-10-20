@@ -11,9 +11,15 @@ import {
 } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 
-// import './index.css';
-import App from './App';
-import LoginView from './containers/login_view';
+
+
+import SingleProfile from './components/single_profile_view';
+
+const Preview = () => {
+  return (
+    <SingleProfile />
+  );
+}
 
 const store = createStore(reducers);
 
@@ -21,8 +27,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <div>
-        <Route path="/" component={LoginView} />
-        <Route path="/:user" component={App} />
+        <Route path="/" component={Preview} />
       </div>
     </Router>
   </Provider>

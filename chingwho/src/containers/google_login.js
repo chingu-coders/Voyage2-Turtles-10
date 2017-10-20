@@ -1,6 +1,6 @@
 import React from 'react';
 import { GoogleLogin } from 'react-google-login';
-import GoogleLogout from 'react-google-login';
+// import GoogleLogout from 'react-google-login';
  
 class Login extends React.Component{
  
@@ -23,11 +23,11 @@ class Login extends React.Component{
           onSuccess={this.responseGoogle}
           onFailure={this.responseGoogle}
         />
-        <GoogleLogout
+        {/* <GoogleLogout
           buttonText="Logout"
           onLogoutSuccess={logout}
         >
-        </GoogleLogout>
+        </GoogleLogout> */}
       </div>
     );
   }

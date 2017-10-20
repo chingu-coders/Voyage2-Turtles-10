@@ -1,0 +1,30 @@
+{
+  "name": "voyage2-turtles-10",
+  "version": "1.0.0",
+  "description": "#### Build to learn",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.2",
+    "mongoose": "^4.10.8",
+    "nodemon": "^1.12.1",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chingu-coders/Voyage2-Turtles-10.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chingu-coders/Voyage2-Turtles-10/issues"
+  },
+  "homepage": "https://github.com/chingu-coders/Voyage2-Turtles-10#readme"
+}

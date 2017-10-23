@@ -1,5 +1,6 @@
 const passport = require('passport');
 const GoogleStrategy  = require('passport-google-oauth20');
+const SlackStrategy = require('passport-slack').Strategy
 const keys = require('../config/keys');
 const mongoose = require('mongoose');
 
@@ -46,3 +47,13 @@ passport.use(new GoogleStrategy({
   })
 );
 
+passport.use(new SlackStrategy({
+  clientID: keys.slackClientID,
+  clientSecret: keys.slackClientSecret,
+  callbackURL: '/auth/slack/callback',
+  proxy: true
+
+}, (accessToken, refreshToken, profile, done) => {
+  console.log('slackpassport, profile: ', profile);
+  done(null, profile)
+}));

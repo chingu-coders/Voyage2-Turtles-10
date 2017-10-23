@@ -14,7 +14,7 @@ module.exports = (app) => {
   app.get('/api/logout', (req, res) => {
     req.logout();//logout is a function attached to req by passport
     //it destroys the cookie for the signed in user
-    res.send(req.user);
+    res.redirect('/');
   })
 
   app.get('/api/current_user', (req, res) => {

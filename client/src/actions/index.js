@@ -1,17 +1,15 @@
 import axios from 'axios';
 
-export const SET_LOGIN_STATUS = 'set_login_status';
+export const FETCH_USER = 'fetch_user';
 export const CHECK_LOGIN_STATUS = 'check_login_status';
 export const SET_USER = 'set_user';
 export const SERVER_TEST = 'server_test';
 
-export function setLoginStatus(bool) {
-  console.log('setloginstatus action called', bool)
-  return {
-    type: SET_LOGIN_STATUS,
-    payload: bool
-  }
+export const fetchUser = () => async dispatch => {
+    const res = await axios.get('/api/current_user');
+    dispatch({ type: FETCH_USER, payload: res })
 }
+
 
 export function checkLoginStatus() {
   return {

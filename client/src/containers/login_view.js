@@ -14,6 +14,7 @@ export default class LoginView extends Component {
       <div>
       <Login />
       <a href="auth/google">new login</a>
+      <a href="auth/slack">new slack login</a>
       </div>
     );
   }

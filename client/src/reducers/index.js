@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import loginStatusReducer from './reducer_login_status';
+import authReducer from './authReducer';
 import serverTest from './reducer_server_test';
 
 const rootReducer = combineReducers({
-  loginStatus: loginStatusReducer,
+  auth: authReducer,
   serverTest: serverTest
 });
 

@@ -9,7 +9,13 @@ module.exports = (app) => {
     })
   );
 
-  app.get('/auth/google/callback', passport.authenticate('google'));
+  app.get(
+    '/auth/google/callback',
+    passport.authenticate('google'),
+    (req, res) => {
+      res.redirect('/');
+    }
+  );
 
   app.get(
     '/auth/slack',
@@ -18,28 +24,21 @@ module.exports = (app) => {
     })
   );
 
-  app.get('/auth/slack/callback', passport.authenticate('slack', { failureRedirect: '/login' }),
+  app.get('/auth/slack/callback',
+  passport.authenticate('slack', { failureRedirect: '/login' }),
     (req, res) => {
-      console.log(req, res);
-      res.send('logged in')
-    // res.redirect('/')
+    res.redirect('/')
   });
 
-  app.get('/login', function(req, res) {
-    res.send('login route');
+  app.get('/api/current_user', (req, res) => {
+    // console.log('made it to route api/current_user, :', req.session)
+    res.send(req.user);
   })
 
   app.get('/api/logout', (req, res) => {
-    console.log('attempting to log out');
-    res.send('loggingout')
+    // console.log('attempting to log out');
     req.logout();//logout is a function attached to req by passport
     //it destroys the cookie for the signed in user
-    res.send(req.user);
+    res.redirect('/');
   })
-
-  app.get('/api/current_user', (req, res) => {
-    res.send(req.user);
-  })
-
-  
 };

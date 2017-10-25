@@ -1,8 +1,6 @@
 import React from 'react';
 import axios from 'axios';
 
-
-
 export default function Login() {
 
   function login() {
@@ -13,5 +11,5 @@ export default function Login() {
   return (
     <div onClick={login}>Old login</div>
   );
-  
+
 }

@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import promise from 'redux-promise';
 import reducers from './reducers';
-import { 
+import {
   BrowserRouter as Router,
   Route,
   Link,
@@ -12,7 +12,6 @@ import {
   withRouter
 } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
-
 import Navigation from './containers/navigation';
 import Sidebar from './containers/sidebar';
 import SingleProfile from './components/single_profile_view';

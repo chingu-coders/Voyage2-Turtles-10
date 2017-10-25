@@ -19,7 +19,7 @@ passport.serializeUser((user, done) => {
 //here we reverse the process by searching the DB for id 
 //and calling done on the instance that's returned
 passport.deserializeUser((id, done) => {
-  passportUser.findById(id)
+  SlackUser.findById(id)
     .then(user => {
       // console.log('at deserializer: user', user, ' id: ', id)
       done(null, user);
